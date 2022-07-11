@@ -3,6 +3,9 @@
 
 body {
     background: linear-gradient(to right, #6372F2, #765FE8);
+    text-align: center;
+    font-family: Roboto, sans-serif ;
+    font-size: 25px;
 }
 
 .calculator-grid {
@@ -17,10 +20,15 @@ body {
     line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
+    background-color: #78e0f59a;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    border-top: solid 2px black
 }
 
 .buttons {
     display: grid;
+    border-top: solid 2px black; ;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     /* FR é de "fraction", uma fração do pedaço disponível dentro do grid. */
