@@ -1,13 +1,15 @@
 let display = document.getElementById('display');
 let buttons = Array.from(document.getElementsByClassName('buttons'));
 // Array.from irá transformar o comando a seguir em uma array.
-// Como foi criado um array a partir dos elementos dentro da div com a classe buttons, todo o 
-// .map irá criar um novo array populado com os resultados de chamar a função de cada elemento que carrega um array. 
+
+// Como foi criado um array a partir dos elementos dentro da div com a classe buttons, todo o .map irá criar um novo array populado com os resultados de chamar a função de cada elemento que carrega um array. 
 buttons.map( button => {
+    
     // addeventlistener irá criar um evento novo no documento especificado.
     button.addEventListener('click', (e) => {
         // Switch é basicamente um controle de IFs, de maneira mais prática e objetiva. Não deve ser usado para todos os casos, mas para casos específicos. 
-        switch(e.target.innerText){
+
+        switch(e.target.innerText){ // Target irá retornar o DOM que 
             case 'C': 
                 display.innerText= '';
                 break
